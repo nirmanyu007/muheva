@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favourites — Muheva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Abhaya+Libre:wght@500;600&family=Inria+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar"><span class="topbar-text">Free shipping on all orders</span></div>
+  <header>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="images/logo.png" alt="Muheva" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kurtis.html">Kurtis</a></li>
+        <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="search" id="siteSearch">
+        <input type="text" id="siteSearchInput" placeholder="Search here" autocomplete="off">
+        <span id="siteSearchIcon">🔍</span>
+        <div class="search-results" id="siteSearchResults"></div>
+      </div>
+      <a href="favourites.html" class="fav-link" id="favLink" aria-label="Favourites">♡<span class="fav-count" id="favCount"></span></a>
+      <div class="account-wrap"><button type="button" class="account-btn" id="accountBtn" aria-label="Log in or sign up">👤</button><div class="account-menu" id="accountMenu"></div></div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    <img src="images/logo.png" alt="Muheva" class="drawer-logo">
+    <div class="drawer-eyebrow">Catalog</div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kurtis.html">Kurtis</a></li>
+      <li><a href="co-ord-sets.html">Co-Ord Sets</a></li>
+      <li><a href="jewelry.html">Jewellery</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </aside>
+
+  <section class="page-banner">
+    <div class="eyebrow">Saved for later</div>
+    <h1>Your Favourites</h1>
+    <p>The pieces you love, all in one place.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Favourites</div>
+  </section>
+
+  <section class="product-section">
+    <div class="product-grid" id="favGrid"></div>
+    <div class="fav-empty" id="favEmpty">
+      <p>You haven’t saved anything yet.</p>
+      <p class="fav-empty-sub">Tap the ♡ on any product to save it here.</p>
+      <a href="kurtis.html" class="btn">Start browsing</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Muheva" class="logo">
+        <p>Heritage worn your way. Elegant, modern styles rooted in timeless tradition.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="kurtis.html">Kurtis</a></li>
+          <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+          <li><a href="jewelry.html">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Stay in touch</h5>
+        <p>Sign up for early access to new arrivals and heritage stories.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Muheva. All rights reserved.</div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+  <script src="account.js"></script>
+</body>
+</html>

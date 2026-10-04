@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipping — Muheva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Abhaya+Libre:wght@500;600&family=Inria+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar"><span class="topbar-text">Free shipping on all orders</span></div>
+  <header>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="images/logo.png" alt="Muheva" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kurtis.html">Kurtis</a></li>
+        <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="search" id="siteSearch">
+        <input type="text" id="siteSearchInput" placeholder="Search here" autocomplete="off">
+        <span id="siteSearchIcon">🔍</span>
+        <div class="search-results" id="siteSearchResults"></div>
+      </div>
+      <a href="favourites.html" class="fav-link" id="favLink" aria-label="Favourites">♡<span class="fav-count" id="favCount"></span></a>
+      <div class="account-wrap"><button type="button" class="account-btn" id="accountBtn" aria-label="Log in or sign up">👤</button><div class="account-menu" id="accountMenu"></div></div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    <img src="images/logo.png" alt="Muheva" class="drawer-logo">
+    <div class="drawer-eyebrow">Catalog</div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kurtis.html">Kurtis</a></li>
+      <li><a href="co-ord-sets.html">Co-Ord Sets</a></li>
+      <li><a href="jewelry.html">Jewellery</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+    </ul>
+  </aside>
+
+  <section class="page-banner">
+    <div class="eyebrow">Good to Know</div>
+    <h1>Shipping &amp; Returns</h1>
+    <p>Everything you need to know about how your order reaches you.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Shipping</div>
+  </section>
+
+  <section class="shipping-content">
+    <section>
+      <h3>Processing Time</h3>
+      <p>Every piece is prepared with care once an order is placed. Please allow 2–3 business days for your order to be packed and handed off for delivery.</p>
+    </section>
+
+    <section>
+      <h3>Shipping Rates &amp; Delivery</h3>
+      <ul>
+        <li>Free shipping on all domestic orders</li>
+        <li>Standard delivery: 4–7 business days within India</li>
+        <li>Express delivery available at checkout for select pin codes</li>
+        <li>International shipping available on request — reach out via our Contact page for rates</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Order Tracking</h3>
+      <p>Once your order ships, you'll receive a confirmation with tracking details so you can follow its journey to your door.</p>
+    </section>
+
+    <section>
+      <h3>Returns &amp; Exchanges</h3>
+      <p>We currently do not accept returns unless the product received is defective or damaged. If you receive a defective item, reach out to us within 7 days of delivery through our <a href="contact.html" style="color:var(--rose-accent); text-decoration:underline;">Contact page</a> and we'll arrange a replacement.</p>
+      <p>Exchanges (for size or item, where available) are accepted within 7 days of delivery, provided the item is unworn, unwashed, and in its original condition with tags attached. Please note that additional delivery charges apply for exchanges and will be borne by the customer.</p>
+    </section>
+
+    <section>
+      <h3>Questions?</h3>
+      <p>If you have any questions about an order, reach out any time through our <a href="contact.html" style="color:var(--rose-accent); text-decoration:underline;">Contact page</a> — we're happy to help.</p>
+    </section>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Muheva" class="logo">
+        <p>Heritage worn your way. Elegant, modern styles rooted in timeless tradition.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="kurtis.html">Kurtis</a></li>
+          <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+          <li><a href="jewelry.html">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Stay in touch</h5>
+        <p>Sign up for early access to new arrivals and heritage stories.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Muheva. All rights reserved.</div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+  <script src="account.js"></script>
+</body>
+</html>

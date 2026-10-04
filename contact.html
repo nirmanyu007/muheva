@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Muheva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Abhaya+Libre:wght@500;600&family=Inria+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar"><span class="topbar-text">Free shipping on all orders</span></div>
+  <header>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="images/logo.png" alt="Muheva" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kurtis.html">Kurtis</a></li>
+        <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="search" id="siteSearch">
+        <input type="text" id="siteSearchInput" placeholder="Search here" autocomplete="off">
+        <span id="siteSearchIcon">🔍</span>
+        <div class="search-results" id="siteSearchResults"></div>
+      </div>
+      <a href="favourites.html" class="fav-link" id="favLink" aria-label="Favourites">♡<span class="fav-count" id="favCount"></span></a>
+      <div class="account-wrap"><button type="button" class="account-btn" id="accountBtn" aria-label="Log in or sign up">👤</button><div class="account-menu" id="accountMenu"></div></div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    <img src="images/logo.png" alt="Muheva" class="drawer-logo">
+    <div class="drawer-eyebrow">Catalog</div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kurtis.html">Kurtis</a></li>
+      <li><a href="co-ord-sets.html">Co-Ord Sets</a></li>
+      <li><a href="jewelry.html">Jewellery</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+    </ul>
+  </aside>
+
+  <section class="page-banner">
+    <div class="eyebrow">Get in Touch</div>
+    <h1>Contact Us</h1>
+    <p>Questions about a piece, sizing, or anything else? We'd love to hear from you.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h3>Reach Us Directly</h3>
+      <ul>
+        <li><span>Email</span>muhevaforyou@gmail.com</li>
+        <li><span>Call</span><a href="tel:+919872785444">+91 98727 85444</a></li>
+        <li><span>Chat</span><a href="https://wa.me/919041928116" target="_blank" rel="noopener">+91 90419 28116</a></li>
+        <li><span>Studio</span>Muheva Design Studio, Dhakoli &amp; Panchkula, India</li>
+        <li><span>Hours</span>Monday – Saturday, 10am – 6pm IST</li>
+      </ul>
+      <h3>Follow Along</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/muheva.in?stkn=dTdrZHJrejU2Y240" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Pinterest</a>
+        <a href="https://whatsapp.com/channel/0029VbDIpih6hENkHuZSld3S" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-note">This opens your email app with your message ready to send — we typically reply within 1–2 business days.</p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Muheva" class="logo">
+        <p>Heritage worn your way. Elegant, modern styles rooted in timeless tradition.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="kurtis.html">Kurtis</a></li>
+          <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+          <li><a href="jewelry.html">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Stay in touch</h5>
+        <p>Sign up for early access to new arrivals and heritage stories.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Muheva. All rights reserved.</div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+  <script src="account.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+      var subject = 'Website inquiry from ' + name;
+      var body = message + '\n\nFrom: ' + name + ' (' + email + ')';
+      window.location.href = 'mailto:muhevaforyou@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>

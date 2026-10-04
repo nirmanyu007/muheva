@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muheva — Heritage Worn Your Way</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Abhaya+Libre:wght@500;600&family=Inria+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar"><span class="topbar-text">Free shipping on all orders</span></div>
+  <header>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="images/logo.png" alt="Muheva" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="kurtis.html">Kurtis</a></li>
+        <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="search" id="siteSearch">
+        <input type="text" id="siteSearchInput" placeholder="Search here" autocomplete="off">
+        <span id="siteSearchIcon">🔍</span>
+        <div class="search-results" id="siteSearchResults"></div>
+      </div>
+      <a href="favourites.html" class="fav-link" id="favLink" aria-label="Favourites">♡<span class="fav-count" id="favCount"></span></a>
+      <div class="account-wrap"><button type="button" class="account-btn" id="accountBtn" aria-label="Log in or sign up">👤</button><div class="account-menu" id="accountMenu"></div></div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    <img src="images/logo.png" alt="Muheva" class="drawer-logo">
+    <div class="drawer-eyebrow">Catalog</div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="kurtis.html">Kurtis</a></li>
+      <li><a href="co-ord-sets.html">Co-Ord Sets</a></li>
+      <li><a href="jewelry.html">Jewellery</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </aside>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <h1>Heritage<br>worn your<br>way</h1>
+      <p>Timeless tradition with a modern vision — explore elegant styles that celebrate your roots.</p>
+      <a href="kurtis.html" class="btn">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="images/kurtis/Lohit1.jpg" alt="Model wearing heritage-inspired outfit">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <span class="feature-icon">🚚</span>
+      <div><h4>FREE SHIPPING</h4><p>On all orders</p></div>
+    </div>
+    <div class="feature-divider"></div>
+    <div class="feature">
+      <span class="feature-icon">✦</span>
+      <div><h4>PREMIUM QUALITY</h4><p>Finest quality</p></div>
+    </div>
+    <div class="feature-divider"></div>
+    <div class="feature">
+      <span class="feature-icon">🔒</span>
+      <div><h4>SECURE PAYMENT</h4><p>100% protected</p></div>
+    </div>
+  </section>
+
+  <section class="category-section" id="category">
+    <div class="eyebrow">Shop by Category</div>
+    <h2>Explore Our Collection</h2>
+    <div class="category-grid">
+      <a class="category-card" href="kurtis.html">
+        <img src="images/kurtis/NEER1.jpg" alt="Kurtis collection">
+        <span class="label">Kurtis</span>
+      </a>
+      <a class="category-card" href="co-ord-sets.html">
+        <img src="images/co-ord-sets/Siyah1.jpg" alt="Co-ord sets collection">
+        <span class="label">Co-ord Sets</span>
+      </a>
+      <a class="category-card" href="jewelry.html">
+        <img src="images/jewellery/1.jpg" alt="Jewelry collection">
+        <span class="label">Jewelry</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="category-section" style="padding-bottom:0;">
+    <div class="eyebrow">Bestsellers</div>
+    <h2>Loved by Our Customers</h2>
+  </section>
+
+  <section class="product-section" style="padding-top:0;">
+    <div class="product-grid">
+            <a class="product-card" href="product.html?id=Lohit">
+        <div class="product-thumb"><span class="product-tag">45% off</span>
+          <img src="images/kurtis/Lohit1.jpg" alt="Lohit"></div>
+        <div class="product-name">Lohit</div>
+        <div class="product-price"><span class="strike">₹ 1650</span>₹899</div>
+      </a>
+
+      <a class="product-card" href="product.html?id=Surkh">
+        <div class="product-thumb"><span class="product-tag">40% off</span>
+          <img src="images/co-ord-sets/Surkh2.jpg" alt="Surkh"></div>
+        <div class="product-name">Surkh</div>
+        <div class="product-price"><span class="strike">₹1990</span>₹1199</div>
+      </a>
+
+      <a class="product-card" href="product.html?id=Jhanak">
+        <div class="product-thumb"><span class="product-tag">15% off</span>
+          <img src="images/jewellery/3.jpg" alt="Jhanak"></div>
+        <div class="product-name">Jhanak</div>
+        <div class="product-price"><span class="strike">₹1046</span>₹799</div>
+      </a>
+
+      <a class="product-card" href="product.html?id=Aasma">
+        <div class="product-thumb"><span class="product-tag">40% off</span>
+          <img src="images/co-ord-sets/Aasma1.jpg" alt="Aasma"></div>
+        <div class="product-name">Aasma</div>
+        <div class="product-price"><span class="strike">₹2300</span>₹1399</div>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="quote-banner">
+    <p>Muheva believes style should feel effortless, inviting women to embrace their authentic selves in every sunlit moment.</p>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Muheva" class="logo">
+        <p>Heritage worn your way. Elegant, modern styles rooted in timeless tradition.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="kurtis.html">Kurtis</a></li>
+          <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+          <li><a href="jewelry.html">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Stay in touch</h5>
+        <p>Sign up for early access to new arrivals and heritage stories.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Muheva. All rights reserved.</div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+  <script src="account.js"></script>
+</body>
+</html>

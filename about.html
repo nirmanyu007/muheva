@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Muheva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Abhaya+Libre:wght@500;600&family=Inria+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar"><span class="topbar-text">Free shipping on all orders</span></div>
+  <header>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="images/logo.png" alt="Muheva" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kurtis.html">Kurtis</a></li>
+        <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="search" id="siteSearch">
+        <input type="text" id="siteSearchInput" placeholder="Search here" autocomplete="off">
+        <span id="siteSearchIcon">🔍</span>
+        <div class="search-results" id="siteSearchResults"></div>
+      </div>
+      <a href="favourites.html" class="fav-link" id="favLink" aria-label="Favourites">♡<span class="fav-count" id="favCount"></span></a>
+      <div class="account-wrap"><button type="button" class="account-btn" id="accountBtn" aria-label="Log in or sign up">👤</button><div class="account-menu" id="accountMenu"></div></div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    <img src="images/logo.png" alt="Muheva" class="drawer-logo">
+    <div class="drawer-eyebrow">Catalog</div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kurtis.html">Kurtis</a></li>
+      <li><a href="co-ord-sets.html">Co-Ord Sets</a></li>
+      <li><a href="jewelry.html">Jewellery</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+    </ul>
+  </aside>
+
+  <section class="page-banner">
+    <div class="eyebrow">Our Story</div>
+    <h1>About Muheva</h1>
+    <p>Heritage worn your way — a small studio dedicated to elegant, modern styles rooted in timeless tradition.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> / About Us</div>
+  </section>
+
+  <section class="about-content">
+    <p>Muheva began as a simple idea: that heritage clothing shouldn't feel like a costume. Every kurti, co-ord set, and piece of jewelry we design draws from generations of craft, reimagined for the way women actually move through their days — effortless, warm, and unmistakably their own.</p>
+    <p>We work with artisans who carry techniques passed down through their families, pairing hand-finished detail with silhouettes built for modern life. The result is a collection that feels equally at home at a family gathering or a quiet Tuesday morning.</p>
+
+    <div class="about-values">
+      <div>
+        <h4>Rooted in Craft</h4>
+        <p>Every piece is made in partnership with skilled artisans, honoring traditional techniques.</p>
+      </div>
+      <div>
+        <h4>Made to Last</h4>
+        <p>We choose fabric and finish for longevity, not just for the season.</p>
+      </div>
+      <div>
+        <h4>Effortless by Design</h4>
+        <p>Style should feel like you, not like work. Every fit is considered for real life.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-banner">
+    <p>Muheva believes style should feel effortless, inviting women to embrace their authentic selves in every sunlit moment.</p>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Muheva" class="logo">
+        <p>Heritage worn your way. Elegant, modern styles rooted in timeless tradition.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="kurtis.html">Kurtis</a></li>
+          <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+          <li><a href="jewelry.html">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Stay in touch</h5>
+        <p>Sign up for early access to new arrivals and heritage stories.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Muheva. All rights reserved.</div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+  <script src="account.js"></script>
+</body>
+</html>

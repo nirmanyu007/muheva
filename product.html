@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">Product — Muheva</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Allura&family=Abhaya+Libre:wght@500;600&family=Inria+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar"><span class="topbar-text">Free shipping on all orders</span></div>
+
+  <header>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <img src="images/logo.png" alt="Muheva" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kurtis.html">Kurtis</a></li>
+        <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+        <li><a href="jewelry.html">Jewelry</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <div class="search" id="siteSearch">
+        <input type="text" id="siteSearchInput" placeholder="Search here" autocomplete="off">
+        <span id="siteSearchIcon">🔍</span>
+        <div class="search-results" id="siteSearchResults"></div>
+      </div>
+      <a href="favourites.html" class="fav-link" id="favLink" aria-label="Favourites">♡<span class="fav-count" id="favCount"></span></a>
+      <div class="account-wrap"><button type="button" class="account-btn" id="accountBtn" aria-label="Log in or sign up">👤</button><div class="account-menu" id="accountMenu"></div></div>
+    </div>
+  </header>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="side-drawer" id="sideDrawer">
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">&times;</button>
+    <img src="images/logo.png" alt="Muheva" class="drawer-logo">
+    <div class="drawer-eyebrow">Catalog</div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="kurtis.html">Kurtis</a></li>
+      <li><a href="co-ord-sets.html">Co-Ord Sets</a></li>
+      <li><a href="jewelry.html">Jewellery</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </aside>
+
+  <div id="productRoot"></div>
+
+  <div id="notFoundRoot" style="display:none;" class="not-found">
+    <h1>Product not found</h1>
+    <p>We couldn't find the item you're looking for. It may have been removed or the link is out of date.</p>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="images/logo.png" alt="Muheva" class="logo">
+        <p>Heritage worn your way. Elegant, modern styles rooted in timeless tradition.</p>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="kurtis.html">Kurtis</a></li>
+          <li><a href="co-ord-sets.html">Co-ord Sets</a></li>
+          <li><a href="jewelry.html">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="shipping.html">Shipping</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Stay in touch</h5>
+        <p>Sign up for early access to new arrivals and heritage stories.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Muheva. All rights reserved.</div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
+  <script src="account.js"></script>
+  <script src="checkout.js"></script>
+  <script>
+    (function () {
+      var productRoot = document.getElementById('productRoot');
+      var notFoundRoot = document.getElementById('notFoundRoot');
+
+      function findProduct(rawId) {
+        if (!rawId) return null;
+        if (PRODUCTS[rawId]) return PRODUCTS[rawId];
+        // fall back to a case-insensitive / trimmed match, in case a link
+        // was typed with different casing or stray spaces
+        var target = rawId.trim().toLowerCase();
+        var key = Object.keys(PRODUCTS).find(function (k) {
+          return k.toLowerCase() === target;
+        });
+        return key ? PRODUCTS[key] : null;
+      }
+
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var id = params.get('id');
+        var product = findProduct(id);
+
+        if (!product) {
+          notFoundRoot.style.display = 'block';
+          return;
+        }
+
+      document.getElementById('pageTitle').textContent = product.name + ' — Muheva';
+
+      var oldPriceHtml = product.oldPrice
+        ? '<span class="strike">' + product.oldPrice + '</span>'
+        : '';
+
+      var tagHtml = product.tag
+        ? '<span class="product-tag" style="position:static; display:inline-block; margin-bottom:14px;">' + product.tag + '</span>'
+        : '';
+
+      var detailsHtml = product.details.map(function (d) {
+        return '<li>' + d + '</li>';
+      }).join('');
+
+      // ---- Order buttons: change the number / Instagram name here only ----
+      var ORDER_WHATSAPP = '919872785444';   // country code + number, no + or spaces
+      var ORDER_INSTAGRAM = 'muheva.in';
+      var orderHtml =
+        '<div class="order-box">' +
+          '<div class="order-title">Order this piece</div>' +
+          '<button type="button" class="order-btn order-wa" id="orderWa">Order on WhatsApp</button>' +
+          '<button type="button" class="order-btn order-ig" id="orderIg">Order on Instagram</button>' +
+          '<p class="order-note" id="orderNote">Tap a button and we\u2019ll confirm your order, size and payment in chat.</p>' +
+        '</div>';
+
+      var sizeHtml = '';
+      if (product.size && product.size.length) {
+        var sizeButtons = product.size.map(function (s) {
+          return '<button type="button" class="size-btn">' + s + '</button>';
+        }).join('');
+        var sleeveType = product.sleeve || 'Bell sleeves';
+        var lengthVal = (product.length || '30') + '"';
+        var SIZE_SPECS = { S: ['34"', '28"'], M: ['36"', '30"'], L: ['38"', '32"'], XL: ['40"', '34"'] };
+        var sizeGuideRows = product.size.map(function (s) {
+          var spec = SIZE_SPECS[s] || ['-', '-'];
+          return '<tr><td>' + [s, spec[0], spec[1], lengthVal, sleeveType].join('</td><td>') + '</td></tr>';
+        }).join('');
+        var sizeGuideTable =
+          '<div class="size-guide-panel" id="sizeGuidePanel">' +
+            '<table class="size-guide-table">' +
+              '<thead><tr><th>Size</th><th>Bust</th><th>Waist</th><th>Length</th><th>Sleeve</th></tr></thead>' +
+              '<tbody>' + sizeGuideRows + '</tbody>' +
+            '</table>' +
+          '</div>';
+        sizeHtml =
+          '<div class="size-selector">' +
+            '<span class="size-label">Size</span>' +
+            '<div class="size-options">' + sizeButtons + '</div>' +
+            '<p class="model-size-note">Model is wearing size S</p>' +
+            '<button type="button" class="size-guide-toggle" id="sizeGuideToggle">View Size Guide</button>' +
+            sizeGuideTable +
+          '</div>';
+      }
+
+      var images = product.images && product.images.length ? product.images : [product.image];
+
+      var thumbsHtml = images.map(function (src, i) {
+        return '<img src="' + src + '" data-index="' + i + '" class="' + (i === 0 ? 'active' : '') + '" alt="' + product.name + ' view ' + (i + 1) + '">';
+      }).join('');
+
+      var arrowsHtml = images.length > 1
+        ? '<button class="carousel-arrow prev" id="carouselPrev" aria-label="Previous photo">&#8249;</button>' +
+          '<button class="carousel-arrow next" id="carouselNext" aria-label="Next photo">&#8250;</button>'
+        : '';
+
+      productRoot.innerHTML =
+        '<section class="page-banner" style="padding:40px 24px 20px;">' +
+          '<div class="breadcrumb">' +
+            '<a href="index.html">Home</a> / ' +
+            '<a href="' + product.categoryUrl + '">' + product.category + '</a> / ' +
+            product.name +
+          '</div>' +
+        '</section>' +
+        '<section class="product-detail">' +
+          '<div class="product-carousel">' +
+            '<div class="product-carousel-main">' +
+              '<img id="carouselMainImg" src="' + images[0] + '" alt="' + product.name + '">' +
+              arrowsHtml +
+            '</div>' +
+            (images.length > 1 ? '<div class="carousel-thumbs" id="carouselThumbs">' + thumbsHtml + '</div>' : '') +
+          '</div>' +
+          '<div class="product-detail-info">' +
+            tagHtml +
+            '<h1>' + product.name + '</h1>' +
+            '<div class="product-detail-price">' + oldPriceHtml + product.price + '</div>' +
+            sizeHtml +
+            orderHtml +
+            '<p class="product-detail-desc">' + product.description + '</p>' +
+            '<ul class="product-detail-list">' + detailsHtml + '</ul>' +
+            '<a href="' + product.categoryUrl + '" class="btn">Back to ' + product.category + '</a>' +
+          '</div>' +
+        '</section>';
+
+      var currentIndex = 0;
+      var mainImg = document.getElementById('carouselMainImg');
+      var thumbEls = document.querySelectorAll('#carouselThumbs img');
+
+      function showImage(i) {
+        currentIndex = (i + images.length) % images.length;
+        mainImg.src = images[currentIndex];
+        thumbEls.forEach(function (el, idx) {
+          el.classList.toggle('active', idx === currentIndex);
+        });
+      }
+
+      thumbEls.forEach(function (el) {
+        el.addEventListener('click', function () {
+          showImage(parseInt(el.getAttribute('data-index'), 10));
+        });
+      });
+
+      var prevBtn = document.getElementById('carouselPrev');
+      var nextBtn = document.getElementById('carouselNext');
+      if (prevBtn) prevBtn.addEventListener('click', function () { showImage(currentIndex - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { showImage(currentIndex + 1); });
+
+        var sizeBtns = document.querySelectorAll('.size-btn');
+        sizeBtns.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            sizeBtns.forEach(function (b) { b.classList.remove('selected'); });
+            btn.classList.add('selected');
+          });
+        });
+
+        function orderMessage(details) {
+          var chosen = (details && details.size) ||
+            (document.querySelector('.size-btn.selected') && document.querySelector('.size-btn.selected').textContent);
+          var lines = ['Hi Muheva, I would like to order:', product.name + ' (' + product.price + ')'];
+          if (chosen) lines.push('Size: ' + chosen);
+          if (details) {
+            lines.push('Name: ' + details.name);
+            lines.push('Phone: +91 ' + details.phone + (details.phoneVerified ? ' (verified)' : ''));
+            lines.push('Email: ' + details.email);
+            lines.push('Address: ' + details.address + ', Pincode: ' + details.pincode);
+          }
+          lines.push(window.location.href);
+          return lines.join('\n');
+        }
+        var orderWa = document.getElementById('orderWa');
+        var orderIg = document.getElementById('orderIg');
+        var orderNote = document.getElementById('orderNote');
+        function startOrder(onReady) {
+          var chosenBtn = document.querySelector('.size-btn.selected');
+          var preselected = chosenBtn ? chosenBtn.textContent : null;
+          if (window.MuhevaCheckout) {
+            window.MuhevaCheckout.start(product, preselected, onReady);
+          } else {
+            onReady(null); // checkout popup failed to load; fall back to a plain order message
+          }
+        }
+        if (orderWa) {
+          orderWa.addEventListener('click', function () {
+            startOrder(function (details) {
+              var url = 'https://wa.me/' + ORDER_WHATSAPP + '?text=' + encodeURIComponent(orderMessage(details));
+              window.open(url, '_blank');
+            });
+          });
+        }
+        if (orderIg) {
+          orderIg.addEventListener('click', function () {
+            startOrder(function (details) {
+              // Instagram cannot pre-fill a message, so copy the order details for pasting into the chat
+              try {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                  navigator.clipboard.writeText(orderMessage(details)).then(function () {
+                    if (orderNote) orderNote.textContent = 'Order details copied \u2014 paste them into the Instagram chat.';
+                  });
+                }
+              } catch (e) { /* copying is a bonus; the chat still opens */ }
+              window.open('https://ig.me/m/' + ORDER_INSTAGRAM, '_blank');
+            });
+          });
+        }
+
+        var sizeGuideToggle = document.getElementById('sizeGuideToggle');
+        var sizeGuidePanel = document.getElementById('sizeGuidePanel');
+        if (sizeGuideToggle && sizeGuidePanel) {
+          sizeGuideToggle.addEventListener('click', function () {
+            var isOpen = sizeGuidePanel.classList.toggle('open');
+            sizeGuideToggle.textContent = isOpen ? 'Hide Size Guide' : 'View Size Guide';
+          });
+        }
+      } catch (e) {
+        // Any unexpected data/rendering error falls back to a friendly
+        // message instead of leaving a blank page.
+        productRoot.innerHTML = '';
+        notFoundRoot.style.display = 'block';
+      }
+    })();
+  </script>
+</body>
+</html>
