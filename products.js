@@ -305,7 +305,7 @@ const PRODUCTS = {
     details: ["Fabric: Cotton blend", "Fit: Relaxed, includes top + bottom", "Care: Hand wash cold, line dry"]
   },
 
-// jewelry //  
+// jewellery //  
 
 
   "Moti": {
@@ -313,8 +313,8 @@ const PRODUCTS = {
     price: "₹899",
     oldPrice: "₹1200",
     tag: "25% off",
-    images: ["images/jewellery/1.jpg", "images/jewellery/1 (2).jpg", "images/jewellery/1 (3).jpg", "images/jewellery/1 (4).jpg"],
-    category: "Jewelry",
+    images: ["images/jewellery/1 (2).png", "images/jewellery/1.jpg",  "images/jewellery/1 (3).jpg", "images/jewellery/1 (4).jpg"],
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "An ornate pearl-strand necklace and earring set, finished with a detailed gold pendant.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -326,7 +326,7 @@ const PRODUCTS = {
     oldPrice: "₹1380",
     tag: "35% off",
     images: ["images/jewellery/2.jpg", "images/jewellery/2 (2).jpg", "images/jewellery/2 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A layered gold-beaded bracelet paired with matching drop earrings.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -338,7 +338,7 @@ const PRODUCTS = {
     oldPrice: "₹1046",
     tag: "15% off",
     images: ["images/jewellery/3 (3).jpg" , "images/jewellery/3.jpg", "images/jewellery/3 (2).jpg" ],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Mirror-work gold jhumkas with a delicate pearl trim.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -350,7 +350,7 @@ const PRODUCTS = {
     oldPrice: "₹1230",
     tag: "35% off",
     images: ["images/jewellery/4.jpg", "images/jewellery/4 (2).jpg", "images/jewellery/4 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Statement chandelier earrings set with a mix of vivid coloured stones.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -361,8 +361,8 @@ const PRODUCTS = {
     price: "₹799",
     oldPrice: "₹1230",
     tag: "35% off",
-    images: ["images/jewellery/5.jpg", "images/jewellery/5 (2).jpg", "images/jewellery/5 (3).jpg", "images/jewellery/5 (4).jpg", "images/jewellery/5 (5).jpg"],
-    category: "Jewelry",
+    images: ["images/jewellery/5 (2).png", "images/jewellery/5.jpg",  "images/jewellery/5 (3).jpg", "images/jewellery/5 (4).jpg", "images/jewellery/5 (5).jpg"],
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Tiered drop earrings in deep red stones with fine bell detailing.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -373,8 +373,8 @@ const PRODUCTS = {
     price: "₹799",
     oldPrice: "₹1230",
     tag: "35% off",
-    images: ["images/jewellery/6.jpg", "images/jewellery/6 (2).jpg", "images/jewellery/6 (3).jpg"],
-    category: "Jewelry",
+    images: ["images/jewellery/6.png","images/jewellery/6 (3).jpg", "images/jewellery/6 (2).jpg" ],
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Tiered drop earrings in smoky purple-grey stones with an antique gold finish.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -385,8 +385,8 @@ const PRODUCTS = {
     price: "₹699",
     oldPrice: "₹1075",
     tag: "35% off",
-    images: ["images/jewellery/7.jpg", "images/jewellery/7 (2).jpg", "images/jewellery/7 (3).jpg"],
-    category: "Jewelry",
+    images: ["images/jewellery/7(3).jpg" , "images/jewellery/7.jpg", "images/jewellery/7(2).jpg", "images/jewellery/7 (3).jpg"],
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Clear stone drop earrings with delicate dangling accents.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -397,8 +397,8 @@ const PRODUCTS = {
     price: "₹699",
     oldPrice: "₹1075",
     tag: "35% off",
-    images: ["images/jewellery/8.jpg", "images/jewellery/8 (2).jpg", "images/jewellery/8 (3).jpg"],
-    category: "Jewelry",
+    images: ["images/jewellery/8.jpg", "images/jewellery/8 (2).jpg", "images/jewellery/7(2).jpg", "images/jewellery/8 (3).jpg"],
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Emerald-cluster drop earrings finished with a beaded halo.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -410,7 +410,7 @@ const PRODUCTS = {
     oldPrice: "₹1075",
     tag: "35% off",
     images: ["images/jewellery/9.jpg", "images/jewellery/9 (2).jpg", "images/jewellery/9 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Clean teardrop stud earrings in a rich green stone.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -422,7 +422,7 @@ const PRODUCTS = {
     oldPrice: "₹1075",
     tag: "35% off",
     images: ["images/jewellery/10.jpg", "images/jewellery/10 (2).jpg", "images/jewellery/10 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Oval stud drop earrings in a deep green hue.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -434,7 +434,7 @@ const PRODUCTS = {
     oldPrice: "₹1075",
     tag: "35% off",
     images: ["images/jewellery/11.jpg", "images/jewellery/11 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Soft rose-toned stud earrings with a delicate gold setting.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -446,7 +446,7 @@ const PRODUCTS = {
     oldPrice: "₹999",
     tag: "20% off",
     images: ["images/jewellery/12 (2).jpg", "images/jewellery/12.jpg", "images/jewellery/12 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Ornate gold jhumkas, photographed styled with a printed ensemble.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -457,8 +457,8 @@ const PRODUCTS = {
     price: "₹799",
     oldPrice: "₹999",
     tag: "20% off",
-    images: ["images/jewellery/13.jpg"],
-    category: "Jewelry",
+    images: ["images/jewellery/13.png" , "images/jewellery/13 (2).jpg", "images/jewellery/15 (2).png"],
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Ornate tiered drop earrings in red and gold with fine detailing.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -469,8 +469,8 @@ const PRODUCTS = {
     price: "₹799",
     oldPrice: "₹999",
     tag: "20% off",
-    images: ["images/jewellery/14.jpg", "images/jewellery/14 (2).jpg", "images/jewellery/14 (3).jpg"],
-    category: "Jewelry",
+    images: ["images/jewellery/111.png", "images/jewellery/14 (2).jpg", "images/jewellery/14.jpg", "images/jewellery/14 (3).jpg", "images/jewellery/15 (2).png"],
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Ornate tiered drop earrings in clear stones with an antique finish.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -481,8 +481,8 @@ const PRODUCTS = {
     price: "₹799",
     oldPrice: "₹999",
     tag: "20% off",
-    images: ["images/jewellery/15.jpg", "images/jewellery/15 (2).jpg", "images/jewellery/15 (3).jpg"],
-    category: "Jewelry",
+    images: ["images/jewellery/15.jpg", "images/jewellery/15 (2).png", "images/jewellery/15 (3).jpg", "images/jewellery/15 (4).png"],
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Soft pastel pink tiered drop earrings with a cream-gold finish.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -494,7 +494,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/16.jpg", "images/jewellery/16 (2).jpg", "images/jewellery/16 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A delicate silver floral bracelet finished with a single pearl.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -506,7 +506,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/17.jpg", "images/jewellery/17 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A silver floral bracelet, a companion piece with subtle detailing.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -518,7 +518,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/18.jpg", "images/jewellery/18 (2).jpg", "images/jewellery/18 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "An adjustable bracelet in deep blue-black stones with a pearl accent.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -530,7 +530,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/19.jpg", "images/jewellery/19 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A colourful gemstone bracelet with an adjustable chain.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -542,7 +542,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/20.jpg", "images/jewellery/20 (2).jpg", "images/jewellery/20 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A minimal silver bar-link bracelet, adjustable to fit.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -554,7 +554,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/21.jpg", "images/jewellery/21 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A dual-tone beaded bracelet with a delicate adjustable chain.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -566,7 +566,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/22.jpg", "images/jewellery/22 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A crystal-cluster bracelet with a soft adjustable chain.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -578,7 +578,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/23.jpg", "images/jewellery/23 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A multicoloured gemstone bracelet finished with a pearl detail.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -590,7 +590,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/24.jpg", "images/jewellery/24 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A deep red gemstone bracelet with a delicate pearl accent.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -602,7 +602,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/25.jpg", "images/jewellery/25 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A simple silver chain bracelet with subtle stone accents.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -614,7 +614,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/26 (4).jpg" , "images/jewellery/26.jpg", "images/jewellery/26 (2).jpg", "images/jewellery/26 (3).jpg", ],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A sleek silver cuff bracelet with rounded bead ends.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -626,7 +626,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/27.jpg", "images/jewellery/27 (2).jpg", "images/jewellery/27 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A sleek gold cuff bracelet with rounded bead ends.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -638,7 +638,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/28.jpg", "images/jewellery/28 (2).jpg", "images/jewellery/28 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A gold cuff bracelet finished with cushion-cut stone ends.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -650,7 +650,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/29.jpg", "images/jewellery/29 (2).jpg", "images/jewellery/29 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A silver cuff bracelet finished with cushion-cut stone ends.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -662,7 +662,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/30.jpg", "images/jewellery/30 (2).jpg", "images/jewellery/30 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A gold cuff bracelet with a textured disc finish.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -674,7 +674,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/31.jpg", "images/jewellery/31 (2).jpg", "images/jewellery/31 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "A silver cuff bracelet finished with star and flower motifs.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -686,7 +686,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/32.jpg", "images/jewellery/32 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Silver drop earrings shaped in an elegant peacock motif.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -698,7 +698,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/33.jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Silver floral cluster drop earrings with a delicate finish.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -710,7 +710,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/34.jpg", "images/jewellery/34 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Clustered crystal flower stud earrings in silver.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -722,7 +722,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/35.jpg", "images/jewellery/35 (2).jpg", "images/jewellery/35 (3).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Flower stud earrings in silver with an asymmetric detail.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -734,7 +734,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/36.jpg", "images/jewellery/36 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Dense floral cluster stud earrings in silver.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -746,7 +746,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/37.jpg", "images/jewellery/37 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Leaf-shaped drop earrings in a soft rose gold finish.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
@@ -758,7 +758,7 @@ const PRODUCTS = {
     oldPrice: "₹769",
     tag: "35% off",
     images: ["images/jewellery/38.jpg", "images/jewellery/38 (2).jpg"],
-    category: "Jewelry",
+    category: "Jewellery",
     categoryUrl: "jewelry.html",
     description: "Leaf-shaped drop earrings in a warm gold finish.",
     details: ["Material: Alloy with stone/bead work", "Closure: Push-back / adjustable", "Care: Store in a dry pouch, avoid perfume contact"]
