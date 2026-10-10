@@ -12,8 +12,8 @@
   console (Authentication -> Settings -> Authorized domains).
 */
 window.MUHEVA_FIREBASE_CONFIG = {
-  apiKey: "PASTE_API_KEY_HERE",
-  authDomain: "PASTE_PROJECT_ID_HERE.firebaseapp.com",
-  projectId: "PASTE_PROJECT_ID_HERE",
-  appId: "PASTE_APP_ID_HERE"
+  apiKey: "AIzaSyDmf3P9jO-ayFU24wsplqP3Yo3VBugrOSs",
+  authDomain: "muheva-1b8c5.firebaseapp.com",
+  projectId: "muheva-1b8c5",
+  appId: "1:685420592642:web:c5a62246e360df7195311b"
 };
