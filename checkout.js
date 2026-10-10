@@ -210,9 +210,10 @@
     showMsg('', '');
     setBusy(true);
     try {
-      if (!recaptcha) {
-        recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha-container', { size: 'invisible' }, auth);
-      }
+      if (recaptcha) { try { recaptcha.clear(); } catch (_) {} recaptcha = null; }
+      var box = el('recaptcha-container');
+      if (box) { box.innerHTML = ''; }
+      recaptcha = new firebase.auth.RecaptchaVerifier('recaptcha-container', { size: 'invisible' }, auth);
       var phone = '+91' + digits;
       var starter = auth.currentUser
         ? function () { return auth.currentUser.linkWithPhoneNumber(phone, recaptcha); }
@@ -227,12 +228,15 @@
           renderPhoneStatus();
           showMsg('This phone number is already verified on your account.', 'success');
         } else {
-          showMsg((OTP_ERRORS[e && e.code]) || 'Couldn\u2019t send the code. Please try again.', 'error');
+          console.error('Phone verification error:', e);
+          if (recaptcha) { try { recaptcha.clear(); } catch (_) {} recaptcha = null; }
+          showMsg((OTP_ERRORS[e && e.code]) || ('Couldn\u2019t send the code. Please try again. (' + ((e && e.code) || 'unknown') + ')'), 'error');
         }
       }).then(function () { setBusy(false); });
     } catch (e) {
       setBusy(false);
-      showMsg('Couldn\u2019t start phone verification. Please try again.', 'error');
+      console.error('Phone verification start error:', e);
+      showMsg('Couldn\u2019t start phone verification. Please try again. (' + ((e && (e.code || e.message)) || 'unknown') + ')', 'error');
     }
   }
 
