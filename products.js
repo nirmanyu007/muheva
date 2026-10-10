@@ -8,7 +8,7 @@ const PRODUCTS = {
     price: "₹799",
     oldPrice: "₹1330",
     tag: "40% off",
-    images: ["images/kurtis/NEER1.jpg", "images/kurtis/NEER2.jpg", "images/kurtis/NEER3.jpg", "images/kurtis/NEER4.jpg"],
+    images: [ "images/kurtis/NEER4.jpg" ,"images/kurtis/NEER2.jpg", "images/kurtis/NEER3.jpg"],
     category: "Kurtis",
     categoryUrl: "kurtis.html",
     size: ["S", "M", "L", "XL"],
